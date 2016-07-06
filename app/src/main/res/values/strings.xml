@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Pi Boiler</string>
+    <string name="room1">Room 1</string>
+    <string name="room2">Room 2</string>
+    <string name="room3">Room 3</string>
+    <string name="room4">Room 4</string>
+    <string name="prompt">Choose Day</string>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="days2">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+</resources>

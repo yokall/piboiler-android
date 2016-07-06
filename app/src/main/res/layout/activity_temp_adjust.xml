@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.markohare.layouttest2.TempAdjust">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adjust Room Temperature"
+        android:textStyle="bold"
+        android:textSize="12pt"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10"
+
+        android:layout_below="@+id/title"
+        android:textSize="10pt"
+        android:paddingTop="30dp"
+        android:paddingLeft="70dp"
+
+
+
+        />
+
+    <com.example.markohare.layouttest2.CircularSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:start_angle="270"
+        app:end_angle="270"
+        app:circle_x_radius="100dp"
+        app:circle_y_radius="100dp"
+        app:use_custom_radii="true"
+        app:progress="25"
+        app:max="100"
+        app:pointer_alpha_ontouch="100"
+        app:pointer_color="#0174DF"
+        app:pointer_halo_color="#880174DF"
+        android:layout_below="@+id/title"
+        />
+
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_below="@+id/seekbar"
+        android:onClick="apply"
+
+        />
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:onClick="openSched"
+        android:layout_below="@+id/seekbar"
+        android:layout_toRightOf="@+id/apply"
+
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Chart"
+        android:layout_below="@id/seekbar"
+        android:layout_toRightOf="@+id/schedule"
+        />
+
+</RelativeLayout>

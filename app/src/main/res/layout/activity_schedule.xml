@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.markohare.layouttest2.Schedule">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule Room Temp"
+        android:textStyle="bold"
+        android:textSize="12pt"
+
+        />
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/prompt"
+        >
+
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/timeSlot1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Time slot 1"
+        android:layout_below="@+id/spin"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tempSlot1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Temp slot 1"
+        android:layout_below="@+id/spin"
+        android:layout_toRightOf="@+id/timeSlot1"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/timeSlot2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Time slot 2"
+        android:layout_below="@+id/timeSlot1"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tempSlot2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Temp slot 2"
+        android:layout_below="@+id/tempSlot1"
+        android:layout_toRightOf="@+id/timeSlot2"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/timeSlot3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Time slot 3"
+        android:layout_below="@+id/timeSlot2"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tempSlot3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Temp slot 3"
+        android:layout_below="@+id/tempSlot2"
+        android:layout_toRightOf="@+id/timeSlot3"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/timeSlot4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Time slot 4"
+        android:layout_below="@+id/timeSlot3"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tempSlot4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Temp slot 4"
+        android:layout_below="@+id/tempSlot3"
+        android:layout_toRightOf="@+id/timeSlot4"
+        android:textSize="10pt"
+        android:padding="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeSlot4"
+        android:text="Save"
+
+
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempSlot4"
+        android:layout_toRightOf="@+id/save"
+        android:text="Back"
+        android:onClick="back"
+        />
+
+
+</RelativeLayout>
